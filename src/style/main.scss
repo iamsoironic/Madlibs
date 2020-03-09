@@ -1,0 +1,64 @@
+html {
+    font-size: 62.5%; // 1rem is 10px
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'montserrat';
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+    margin-top: 2rem;
+    display: grid;
+    justify-items: center;
+
+    .enter {
+        font-family: 'Ruslan Display', cursive;
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+.home-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    font-size: 100px;
+    font-weight: 900;
+    
+    h1 {
+        font-family: 'Ruslan Display', cursive;
+        text-shadow: 0px 7px 10px rgb(41, 113, 195);
+    }
+}
+
+.button-wrapper a {
+    font-size: 50px;
+    color: dodgerblue;
+    border-radius: 15px;
+    outline: none;
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 15px rgb(124, 139, 156));
+
+    &:hover {
+        cursor: pointer;
+        outline: none;
+        color: gray;
+
+    }
+}
